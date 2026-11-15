@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Escola Prática de Finanças | Cursos e consultoria em Salvador</title>
+<meta name="description" content="Educação financeira prática em Salvador: cursos presenciais, EAD, consultoria individual, mentoria e treinamentos para empresas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#F2F7F6;--surf:#fff;--ink:#0A343B;--mut:#4A6870;--line:#D3E1E0;--teal:#0F5560;--grn:#14B86F;--grn-ink:#06643B;--w1:#FF8A3D;--w2:#FFC145;--r:14px;--on:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#071E22;--surf:#0C2D33;--ink:#E6F2F1;--mut:#9DBBBE;--line:#1C4850;--teal:#7FD0DA;--grn:#2BD688;--grn-ink:#7BEBB5;--on:#06262B}}
+*,*::before,*::after{box-sizing:inherit}
+html{height:100%;scroll-behavior:smooth;scroll-padding-top:5rem}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.6 Figtree,system-ui,sans-serif}
+h1,h2,h3{font-family:'Bricolage Grotesque',Figtree,system-ui,sans-serif;line-height:1.1;margin:0;letter-spacing:-.02em}
+h1{font-size:clamp(2.3rem,5.4vw,4rem);font-weight:800}
+h2{font-size:clamp(1.7rem,3.4vw,2.5rem);font-weight:700}
+h3{font-size:1.2rem;font-weight:700}
+p{margin:0}a{color:inherit}
+:focus-visible{outline:3px solid var(--w1);outline-offset:2px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 1.25rem}
+section{padding:4.5rem 0}
+.lead{color:var(--mut);max-width:60ch;margin-top:.8rem}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:1.2rem;height:4rem}
+.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;font:800 1.05rem 'Bricolage Grotesque',sans-serif;line-height:1.05}
+nav{display:flex;gap:1.3rem;margin-left:auto;font-weight:500;font-size:.97rem}
+nav a{text-decoration:none;color:var(--mut)}nav a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:.5rem;border:0;border-radius:999px;padding:.75rem 1.4rem;font:600 1rem Figtree,sans-serif;cursor:pointer;text-decoration:none;background:var(--teal);color:var(--on)}
+.btn.go{background:linear-gradient(100deg,var(--w1),var(--w2));color:#2A1500}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.btn.sm{padding:.5rem 1rem;font-size:.92rem}
+#cartBtn{position:relative}
+#cartN{background:var(--grn);color:#04301C;border-radius:99px;min-width:1.4rem;height:1.4rem;display:grid;place-items:center;font-size:.8rem}
+.hero{padding:3.5rem 0 4rem}
+.hgrid{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center}
+.hero p.lead{font-size:1.15rem}
+.cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.8rem}
+.sim{background:var(--surf);border:1px solid var(--line);border-radius:22px;padding:1.5rem;box-shadow:0 18px 40px -24px rgba(10,52,59,.45)}
+.sim h2{font-size:1.35rem}
+.sim .row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:.7rem;margin:1rem 0}
+label{font-size:.85rem;font-weight:600;color:var(--mut);display:block}
+input,select,textarea{width:100%;margin-top:.25rem;padding:.65rem .75rem;border:1.5px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);font:inherit}
+.res{font:700 1.7rem 'Bricolage Grotesque',sans-serif}
+.res small{display:block;font:400 .88rem Figtree,sans-serif;color:var(--mut)}
+svg.spark{width:100%;height:90px;margin-top:.6rem}
+.fine{font-size:.82rem;color:var(--mut);margin-top:.6rem}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.6rem 0}
+.chip{border:1.5px solid var(--line);background:transparent;color:var(--ink);border-radius:99px;padding:.45rem 1rem;font:500 .95rem Figtree,sans-serif;cursor:pointer}
+.chip[aria-pressed=true]{background:var(--teal);border-color:var(--teal);color:var(--on)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1.1rem}
+.card{background:var(--surf);border:1px solid var(--line);border-radius:var(--r);padding:1.3rem;display:flex;flex-direction:column;gap:.7rem}
+.tag{align-self:flex-start;font-size:.78rem;font-weight:600;padding:.15rem .6rem;border-radius:99px;background:color-mix(in srgb,var(--grn) 18%,transparent);color:var(--grn-ink)}
+.tag.w{background:color-mix(in srgb,var(--w2) 35%,transparent);color:#6A3A00}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .tag.w{color:var(--w2)}}
+.card ul{margin:0;padding-left:1.1rem;color:var(--mut);font-size:.95rem}
+.price{font:800 1.6rem 'Bricolage Grotesque',sans-serif;margin-top:auto}
+.price small{font:400 .85rem Figtree,sans-serif;color:var(--mut)}
+.band{background:var(--teal);color:#fff}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .band{background:#0C2D33;color:var(--ink)}}
+.band .lead{color:inherit;opacity:.85}
+.steps{list-style:none;counter-reset:s;padding:0;margin:2rem 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.2rem}
+.steps li{counter-increment:s;border-top:3px solid var(--w2);padding-top:.8rem}
+.steps li::before{content:counter(s);font:800 1.8rem 'Bricolage Grotesque',sans-serif;color:var(--w2);display:block}
+.steps b{display:block;font:700 1.15rem 'Bricolage Grotesque',sans-serif}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+.pub{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1.6rem}
+.pub div{padding:1rem 1.2rem;border-left:4px solid var(--grn);background:var(--surf);border-radius:0 var(--r) var(--r) 0}
+.pub b{display:block}
+.form{display:grid;gap:.9rem}
+.form .two2{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}
+details{border-bottom:1px solid var(--line);padding:1rem 0}
+summary{font-weight:600;cursor:pointer}
+details p{color:var(--mut);margin-top:.5rem;max-width:65ch}
+.team{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1.6rem}
+.view{display:none}.view.on{display:block}main{min-height:70vh}nav a[aria-current]{color:var(--ink);font-weight:600;border-bottom:2px solid var(--grn)}
+footer{background:#06262B;color:#CFE3E2;padding:2.5rem 0;font-size:.93rem}
+footer a{color:#fff}
+.fg{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem}
+#ov{position:fixed;inset:0;background:rgba(3,20,24,.55);display:none;z-index:30}
+#dr{position:fixed;top:0;right:0;bottom:0;width:min(440px,100%);background:var(--surf);z-index:31;transform:translateX(105%);transition:transform .25s;display:flex;flex-direction:column;padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}
+#dr.open{transform:none}
+.dh{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.3rem;border-bottom:1px solid var(--line)}
+.db{padding:1.2rem 1.3rem;overflow:auto;flex:1}
+.li{display:flex;justify-content:space-between;gap:1rem;padding:.8rem 0;border-bottom:1px solid var(--line)}
+.li button{background:none;border:0;color:var(--mut);cursor:pointer;text-decoration:underline;font:inherit;font-size:.85rem;padding:0}
+.tot{display:flex;justify-content:space-between;font:700 1.3rem 'Bricolage Grotesque',sans-serif;margin:1rem 0}
+.err{color:#C0392B;font-size:.85rem;min-height:1.1em}
+.ok{background:color-mix(in srgb,var(--grn) 15%,transparent);border-radius:var(--r);padding:1rem;margin:1rem 0}
+#toast{position:fixed;left:50%;bottom:1.5rem;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:.6rem 1.1rem;border-radius:99px;font-size:.93rem;opacity:0;pointer-events:none;transition:opacity .2s;z-index:40}
+#toast.on{opacity:1}
+@media(max-width:820px){.hgrid,.two{grid-template-columns:1fr;gap:2rem}nav{order:3;width:100%;overflow-x:auto;margin:0;gap:1.2rem;padding-bottom:.5rem;white-space:nowrap}.sim .row{grid-template-columns:1fr 1fr 1fr}section{padding:3.2rem 0}.bar{gap:.6rem;height:auto;flex-wrap:wrap;padding-top:.5rem}.brand{margin-right:auto}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header><div class="wrap bar">
+<a class="brand" href="#topo" aria-label="Escola Prática de Finanças, início">
+<svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><path d="M3 9c5-2 9-1 14 2v18C12 26 8 25 3 27z" fill="#0F5560"/><path d="M31 9c-5-2-9-1-14 2v18c5-3 9-4 14-2z" fill="#14B86F"/><path d="M19 25v-5m4 4v-8m4 7V14" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/><path d="M17 8l6-5 1 6" stroke="#FF8A3D" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<span>Escola Prática<br>de Finanças</span></a>
+<nav aria-label="Principal"><a href="#inicio">Início</a><a href="#cursos">Cursos</a><a href="#empresas">Para empresas</a><a href="#escola">A escola</a><a href="#contato">Contato</a></nav>
+<button class="btn sm" id="cartBtn" aria-label="Abrir matrícula">Matrícula <span id="cartN">0</span></button>
+</div></header>
+
+<main id="topo">
+<section class="hero view" data-v="inicio"><div class="wrap hgrid">
+<div>
+<h1>Sua evolução financeira começa aqui!</h1>
+<p class="lead">Aulas com planilhas e simulações reais para você organizar o orçamento, sair das dívidas e planejar o próximo passo. Presencial no Caminho das Árvores, em Salvador, ou online.</p>
+<div class="cta"><a class="btn go" href="#cursos">Ver cursos e preços</a><a class="btn ghost" href="#contato">Falar com a escola</a></div>
+<p class="fine">Turmas à noite e aos fins de semana.</p>
+</div>
+<form class="sim" id="sim" onsubmit="return false" aria-labelledby="simT">
+<h2 id="simT">Simule sua meta</h2>
+<p class="fine" style="margin:.3rem 0 0">É um exemplo das simulações que usamos em aula.</p>
+<div class="row">
+<label>Guardo por mês (R$)<input id="s1" type="number" min="1" step="10" value="300" inputmode="decimal"></label>
+<label>Minha meta (R$)<input id="s2" type="number" min="1" step="100" value="10000" inputmode="decimal"></label>
+<label>Rende ao mês (%)<input id="s3" type="number" min="0" step="0.1" value="0.7" inputmode="decimal"></label>
+</div>
+<div class="res" id="sr" aria-live="polite"></div>
+<svg class="spark" id="sp" viewBox="0 0 300 90" preserveAspectRatio="none" role="img" aria-label="Evolução do saldo ao longo dos meses"></svg>
+<p class="fine">Estimativa com aportes mensais e rendimento constante, sem impostos. Não é recomendação de investimento.</p>
+</form>
+</div></section>
+
+<section id="cursos" class="view" data-v="cursos" style="padding-top:2rem"><div class="wrap">
+<h2>Cursos, consultoria e treinamentos</h2>
+<p class="lead">Escolha o que combina com o seu momento e monte sua matrícula. A equipe confirma turma, horário e pagamento pelo WhatsApp.</p>
+<div class="chips" role="group" aria-label="Filtrar" id="chips"></div>
+<div class="grid" id="cat"></div>
+<p class="fine">Valores por pessoa, com parcelamento facilitado e combos de cursos sob consulta. Os itens online estão em pré-matrícula enquanto a plataforma EAD é lançada.</p>
+</div></section>
+
+<section id="metodo" class="band view" data-v="inicio"><div class="wrap">
+<h2>Aprender fazendo, com o seu dinheiro como exemplo</h2>
+<p class="lead">Nada de aula só de teoria. Cada encontro termina com algo que você já pode usar no dia seguinte.</p>
+<ol class="steps">
+<li><b>Diagnóstico</b>Entendemos sua renda, seus gastos e o que você quer conquistar.</li>
+<li><b>Simulação</b>Você testa cenários em software e planilhas personalizadas antes de decidir.</li>
+<li><b>Prática</b>Monta orçamento, plano de dívidas e metas com apoio dos professores.</li>
+<li><b>Acompanhamento</b>Medimos sua evolução e coletamos seu feedback para ajustar o caminho.</li>
+</ol>
+</div></section>
+
+<section class="view" data-v="inicio"><div class="wrap">
+<h2>Para quem é</h2>
+<div class="pub">
+<div><b>Universitários e início de carreira</b>Controle de gastos e primeiras metas.</div>
+<div><b>MEI e autônomos</b>Separar finanças pessoais e do negócio.</div>
+<div><b>Quem quer sair das dívidas</b>Organizar o que deve e planejar a saída.</div>
+<div><b>Quem quer investir com segurança</b>Entender o básico antes de aplicar.</div>
+</div></div></section>
+
+<section id="empresas" class="view" data-v="empresas" style="background:var(--surf)"><div class="wrap two">
+<div>
+<h2>Educação financeira para a sua equipe</h2>
+<p class="lead">Palestras e treinamentos para empresas, escolas e instituições. Conteúdo adaptado ao seu público, in company ou na nossa sede.</p>
+<ul style="color:var(--mut);padding-left:1.1rem;margin-top:1rem"><li>Palestras corporativas a partir de R$ 500,00</li><li>Workshops de curta duração</li><li>Parcerias com escolas e universidades</li></ul>
+</div>
+<form class="form" id="corp" novalidate>
+<h3>Peça um orçamento</h3>
+<label>Empresa ou instituição<input name="emp" required autocomplete="organization"></label>
+<div class="two2"><label>Seu nome<input name="nome" required autocomplete="name"></label><label>Colaboradores<input name="qtd" type="number" min="1" inputmode="numeric" required></label></div>
+<label>O que você procura<select name="int"><option>Palestra corporativa</option><option>Treinamento para a equipe</option><option>Workshop</option><option>Parceria institucional</option></select></label>
+<div class="err" id="corpE"></div>
+<button class="btn go" type="submit">Enviar pelo WhatsApp</button>
+</form></div></section>
+
+<section id="escola" class="view" data-v="escola"><div class="wrap">
+<h2>Quem está por trás da escola</h2>
+<p class="lead"><b>Missão:</b> promover educação financeira prática e acessível, para que as pessoas decidam com segurança e sustentabilidade. Valorizamos ética, transparência e resultados práticos.</p>
+<div class="team">
+<div class="card"><h3>Ana Tereza Castro Cabral</h3><span class="tag">Diretora Geral</span></div>
+<div class="card"><h3>Tássio José dos Santos Machado</h3><span class="tag">Diretor Financeiro</span></div>
+<div class="card"><h3>Isis Rani Andrade Bispo da Silva</h3><span class="tag">Marketing e Vendas</span></div>
+<div class="card"><h3>Raphael Ryan da Silva Santana</h3><span class="tag">Diretor Acadêmico</span></div>
+</div>
+</div></section>
+
+<section id="duvidas" class="view" data-v="cursos" style="background:var(--surf)"><div class="wrap" style="max-width:800px">
+<h2>Dúvidas frequentes</h2>
+<div style="margin-top:1.2rem">
+<details><summary>Como funciona a matrícula?</summary><p>Você escolhe os itens, preenche seus dados e envia pelo WhatsApp. A equipe confirma turma, horário e forma de pagamento. A matrícula só vale após essa confirmação.</p></details>
+<details><summary>Preciso saber de finanças para começar?</summary><p>Não. O Curso Básico parte do zero e é o melhor ponto de partida.</p></details>
+<details><summary>Tem aula à noite ou no fim de semana?</summary><p>Sim. Trabalhamos com horários flexíveis, incluindo noites e fins de semana.</p></details>
+<details><summary>O que é a pré-matrícula dos itens online?</summary><p>A plataforma EAD está em implantação. Quem se inscreve antes garante lugar na lista e é avisado do lançamento.</p></details>
+<details><summary>Atendem empresas e escolas?</summary><p>Sim, com palestras e treinamentos. Use o formulário da seção Para empresas.</p></details>
+</div></div></section>
+
+<section id="contato" class="view" data-v="contato"><div class="wrap two">
+<div>
+<h2>Venha conversar</h2>
+<p class="lead">Mundo Plaza Empresarial<br>Av. Tancredo Neves, 620, Caminho das Árvores<br>Salvador, BA, CEP 41820-020</p>
+<p class="lead">Perto do Salvador Shopping, de estações de metrô e pontos de ônibus. Prédio com elevador, acessibilidade, portaria e estacionamento rotativo.</p>
+<div class="cta"><a class="btn" id="waMain" target="_blank" rel="noopener" href="#">Chamar no WhatsApp</a><a class="btn ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Mundo+Plaza+Empresarial+Av+Tancredo+Neves+620+Salvador">Abrir no mapa</a></div>
+</div>
+<form class="form" id="ct" novalidate>
+<h3>Tire uma dúvida</h3>
+<label>Nome<input name="nome" required autocomplete="name"></label>
+<label>Sua mensagem<textarea name="msg" rows="4" required></textarea></label>
+<div class="err" id="ctE"></div>
+<button class="btn" type="submit">Enviar pelo WhatsApp</button>
+</form></div></section>
+</main>
+
+<footer><div class="wrap fg">
+<div><b style="color:#fff">Escola Prática de Finanças</b><br>Escola Prática de Finanças Pessoais e Empreendedorismo Ltda.<br>Treinamento em desenvolvimento profissional e gerencial</div>
+<div>Av. Tancredo Neves, 620, Salvador, BA<br>Atendimento: noites e fins de semana</div>
+<div>Sua evolução financeira começa aqui!<br>© 2026 Todos os direitos reservados.</div>
+</div></footer>
+
+<div id="ov"></div>
+<aside id="dr" aria-label="Sua matrícula" aria-hidden="true"><div class="dh"><h3 id="dt">Sua matrícula</h3><button class="btn ghost sm" id="cl">Fechar</button></div><div class="db" id="db"></div></aside>
+<div id="toast" role="status"></div>
+
+<script>
+const WA='5571987276412'; // WhatsApp oficial (DDI+DDD+número, só dígitos)
+const $=s=>document.querySelector(s),brl=n=>n.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
+const ITEMS=[
+{id:'basico',n:'Curso Básico de Educação Financeira',c:'curso',m:'Presencial',p:300,d:'Introdução à organização financeira pessoal.',b:['Orçamento mensal','Controle de gastos','Primeiras metas']},
+{id:'plan',n:'Curso de Planejamento Financeiro',c:'curso',m:'Presencial',p:400,d:'Planejamento de metas e organização financeira.',b:['Metas de curto e longo prazo','Reserva de emergência','Simulações em software']},
+{id:'ead',n:'Curso Online (EAD)',c:'curso',m:'Online',p:250,d:'Curso digital com acesso remoto e flexível.',b:['Estude no seu ritmo','Pré-matrícula aberta'],pre:1},
+{id:'assin',n:'Assinatura EAD',c:'curso',m:'Online',p:150,per:'/mês',d:'Acesso contínuo a aulas, conteúdo e materiais exclusivos.',b:['Conteúdo novo','Materiais exclusivos'],pre:1},
+{id:'cons',n:'Consultoria Financeira Individual',c:'servico',m:'Presencial',p:200,d:'Diagnóstico e planejamento personalizado.',b:['Atendimento individual','Plano sob medida']},
+{id:'work',n:'Workshop Financeiro',c:'servico',m:'Presencial',p:100,d:'Evento prático de curta duração.',b:['Encontro de curta duração','Prática guiada']},
+{id:'ment',n:'Mentoria Premium',c:'servico',m:'Presencial',p:1000,d:'Acompanhamento individual aprofundado, com foco em resultados e planejamento estratégico.',b:['Acompanhamento individual','Foco em resultados']},
+{id:'palestra',n:'Palestra Corporativa',c:'empresa',m:'Empresas',p:500,from:1,d:'Treinamento financeiro para colaboradores da sua empresa.',b:['Conteúdo adaptado','Valor varia com o escopo']}
+];
+const CATS=[['todos','Todos'],['curso','Cursos'],['servico','Serviços'],['empresa','Empresas'],['online','Online']];
+const ld=(k,d)=>{try{return JSON.parse(localStorage.getItem(k))||d}catch(e){return d}};
+const sv=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}};
+let cart=ld('epf_cart',[]).filter(i=>ITEMS.some(x=>x.id==i)),filt='todos',view='cart';
+const wa=t=>`https://wa.me/${WA}?text=${encodeURIComponent(t)}`;
+$('#waMain').href=wa('Olá! Vim pelo site da Escola Prática de Finanças e gostaria de mais informações.');
+function toast(t){const e=$('#toast');e.textContent=t;e.classList.add('on');setTimeout(()=>e.classList.remove('on'),2200)}
+
+// Simulador
+function sim(){
+ const P=+$('#s1').value,M=+$('#s2').value,i=(+$('#s3').value||0)/100,r=$('#sr'),sp=$('#sp');
+ if(!(P>0)||!(M>0)){r.innerHTML='Preencha valores maiores que zero.';sp.innerHTML='';return}
+ let b=0,n=0,pts=[0];
+ while(b<M&&n<600){b=b*(1+i)+P;n++;pts.push(b)}
+ if(b<M){r.innerHTML='Mais de 50 anos<small>Aumente o valor guardado para chegar mais rápido.</small>'}
+ else{const a=Math.floor(n/12),m=n%12;r.innerHTML=`${a?a+(a>1?' anos':' ano')+(m?' e ':''):''}${m?m+(m>1?' meses':' mês'):''}<small>para juntar ${brl(M)} guardando ${brl(P)} por mês</small>`}
+ const mx=Math.max(...pts,M),st=pts.length>1?300/(pts.length-1):300;
+ const d=pts.map((v,k)=>`${(k*st).toFixed(1)},${(88-v/mx*84).toFixed(1)}`).join(' ');
+ sp.innerHTML=`<line x1="0" x2="300" y1="${88-M/mx*84}" y2="${88-M/mx*84}" stroke="#FF8A3D" stroke-dasharray="4 4"/><polyline points="${d}" fill="none" stroke="#14B86F" stroke-width="3" stroke-linejoin="round"/>`;
+}
+['s1','s2','s3'].forEach(i=>$('#'+i).addEventListener('input',sim));sim();
+
+// Catálogo
+function renderChips(){$('#chips').innerHTML=CATS.map(([k,l])=>`<button class="chip" aria-pressed="${filt==k}" data-f="${k}">${l}</button>`).join('')}
+function renderCat(){
+ const L=ITEMS.filter(x=>filt=='todos'||x.c==filt||(filt=='online'&&x.m=='Online'));
+ $('#cat').innerHTML=L.map(x=>{const on=cart.includes(x.id);return `<article class="card"><span class="tag${x.pre?' w':''}">${x.pre?'Pré-matrícula · ':''}${x.m}</span><h3>${x.n}</h3><p style="color:var(--mut);font-size:.95rem">${x.d}</p><ul>${x.b.map(t=>`<li>${t}</li>`).join('')}</ul><div class="price"><small>${x.from?'a partir de ':''}</small>${brl(x.p)}<small>${x.per||''}</small></div><button class="btn${on?' ghost':''}" data-t="${x.id}">${on?'Remover da matrícula':'Adicionar à matrícula'}</button></article>`}).join('');
+}
+$('#chips').addEventListener('click',e=>{const f=e.target.dataset.f;if(f){filt=f;renderChips();renderCat()}});
+$('#cat').addEventListener('click',e=>{const t=e.target.dataset.t;if(t){toggle(t)}});
+function toggle(id){const k=cart.indexOf(id);if(k<0){cart.push(id);toast('Adicionado à matrícula')}else cart.splice(k,1);sv('epf_cart',cart);sync()}
+function sync(){$('#cartN').textContent=cart.length;renderCat();if($('#dr').classList.contains('open'))drawer()}
+
+// Gaveta de matrícula
+function open_(){view=view=='done'?'cart':view;$('#ov').style.display='block';$('#dr').classList.add('open');$('#dr').setAttribute('aria-hidden','false');drawer();$('#cl').focus()}
+function close_(){$('#ov').style.display='none';$('#dr').classList.remove('open');$('#dr').setAttribute('aria-hidden','true');if(view=='done')view='cart'}
+$('#cartBtn').onclick=open_;$('#cl').onclick=close_;$('#ov').onclick=close_;
+document.addEventListener('keydown',e=>{if(e.key=='Escape')close_()});
+const items=()=>cart.map(id=>ITEMS.find(x=>x.id==id));
+const total=()=>items().reduce((s,x)=>s+x.p,0);
+function drawer(){
+ const db=$('#db'),L=items();
+ if(view=='cart'){
+  $('#dt').textContent='Sua matrícula';
+  if(!L.length){db.innerHTML='<p>Sua matrícula está vazia. Escolha um curso ou serviço para começar.</p><p style="margin-top:1rem"><a class="btn" href="#cursos" id="goC">Ver cursos</a></p>';$('#goC').onclick=close_;return}
+  db.innerHTML=L.map(x=>`<div class="li"><div><b>${x.n}</b><br><span class="fine">${x.m}${x.pre?' · pré-matrícula':''}</span><br><button data-r="${x.id}">Remover</button></div><b>${x.from?'a partir de ':''}${brl(x.p)}${x.per||''}</b></div>`).join('')+`<div class="tot"><span>Total</span><span>${brl(total())}</span></div><p class="fine">Pagamento combinado na confirmação com a equipe.</p><button class="btn go" style="width:100%;margin-top:1rem;justify-content:center" id="nx">Continuar</button>`;
+  db.querySelectorAll('[data-r]').forEach(b=>b.onclick=()=>toggle(b.dataset.r));$('#nx').onclick=()=>{view='form';drawer()};
+ }else if(view=='form'){
+  $('#dt').textContent='Seus dados';
+  const pres=L.some(x=>x.m=='Presencial');
+  db.innerHTML=`<form class="form" id="ff" novalidate><label>Nome completo<input name="nome" required autocomplete="name"></label><label>WhatsApp com DDD<input name="tel" required inputmode="tel" autocomplete="tel" placeholder="71 90000-0000"></label><label>E-mail<input name="email" type="email" required autocomplete="email"></label>${pres?'<label>Horário preferido<select name="turno"><option>Noite (dias úteis)</option><option>Sábado</option><option>Domingo</option></select></label>':''}<label>Forma de pagamento preferida<select name="pg"><option>Pix</option><option>Cartão de crédito</option><option>Boleto</option></select></label><label style="display:flex;gap:.5rem;font-weight:400"><input type="checkbox" name="ok" style="width:auto;margin:.3rem 0 0"> Aceito ser contatado pela escola para confirmar a matrícula.</label><div class="err" id="fe" role="alert"></div><button class="btn go" type="submit" style="justify-content:center">Enviar matrícula · ${brl(total())}</button><button class="btn ghost" type="button" id="bk" style="justify-content:center">Voltar</button></form>`;
+  $('#bk').onclick=()=>{view='cart';drawer()};
+  $('#ff').onsubmit=e=>{e.preventDefault();const f=new FormData(e.target),nome=(f.get('nome')||'').trim(),tel=(f.get('tel')||'').replace(/\D/g,''),em=(f.get('email')||'').trim();
+   const er=m=>{$('#fe').textContent=m};
+   if(nome.split(/\s+/).length<2)return er('Informe nome e sobrenome.');
+   if(tel.length<10||tel.length>11)return er('WhatsApp inválido. Use DDD e número, ex.: 71 90000-0000.');
+   if(!/^\S+@\S+\.\S+$/.test(em))return er('E-mail inválido.');
+   if(!f.get('ok'))return er('Marque a autorização de contato para continuar.');
+   const proto='EPF-'+Date.now().toString(36).toUpperCase().slice(-6),
+   msg=`Olá! Quero me matricular na Escola Prática de Finanças.\nProtocolo: ${proto}\nNome: ${nome}\nWhatsApp: ${tel}\nE-mail: ${em}\n${f.get('turno')?'Horário: '+f.get('turno')+'\n':''}Pagamento: ${f.get('pg')}\nItens:\n${items().map(x=>'- '+x.n+' ('+brl(x.p)+(x.per||'')+')').join('\n')}\nTotal: ${brl(total())}`;
+   const o=ld('epf_orders',[]);o.push({proto,nome,total:total(),ids:cart.slice(),t:Date.now()});sv('epf_orders',o);
+   window._wa=wa(msg);window._proto=proto;cart=[];sv('epf_cart',cart);view='done';sync();drawer();
+  };
+ }else{
+  $('#dt').textContent='Matrícula registrada';
+  db.innerHTML=`<div class="ok"><b>Protocolo ${window._proto}</b><br>Falta um passo: envie seus dados pelo WhatsApp para a equipe confirmar turma, horário e pagamento.</div><a class="btn go" style="width:100%;justify-content:center" target="_blank" rel="noopener" href="${window._wa}">Enviar pelo WhatsApp</a><button class="btn ghost" style="width:100%;justify-content:center;margin-top:.8rem" id="dn">Fechar</button>`;$('#dn').onclick=close_;
+ }
+}
+
+// Formulários de contato
+function wform(id,eid,build,req){
+ $(id).onsubmit=e=>{e.preventDefault();const f=Object.fromEntries(new FormData(e.target));
+  if(req.some(k=>!String(f[k]||'').trim())){$(eid).textContent='Preencha todos os campos para enviar.';return}
+  $(eid).textContent='';window.open(wa(build(f)),'_blank','noopener');toast('Abrindo o WhatsApp')};
+}
+wform('#corp','#corpE',f=>`Olá! Gostaria de um orçamento.\nEmpresa: ${f.emp}\nContato: ${f.nome}\nColaboradores: ${f.qtd}\nInteresse: ${f.int}`,['emp','nome','qtd']);
+wform('#ct','#ctE',f=>`Olá! Sou ${f.nome}. ${f.msg}`,['nome','msg']);
+renderChips();sync();
+const MAP={topo:'inicio',inicio:'inicio',metodo:'inicio',cursos:'cursos',duvidas:'cursos',empresas:'empresas',escola:'escola',contato:'contato'};
+function route(){const h=location.hash.slice(1)||'inicio',v=MAP[h]||'inicio';
+ document.querySelectorAll('.view').forEach(s=>s.classList.toggle('on',s.dataset.v==v));
+ document.querySelectorAll('nav a').forEach(a=>{if(a.getAttribute('href')=='#'+v)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
+ const t=document.getElementById(h);if(t&&(h=='metodo'||h=='duvidas'))t.scrollIntoView();else window.scrollTo(0,0)}
+addEventListener('hashchange',route);route();
+</script>
+</body>
+</html>
